@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\",
+  "WorkspaceRootPath": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|c:\\users\\shtoretc\\downloads\\telegram desktop\\frequencydictionary_forms (2)\\frequencydictionary_forms\\frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|c:\\users\\shtoretc\\simplehuffmanencoder\\frequencydictionary_forms\\frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|solutionrelative:frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\frequencydictionary_forms\\binarynode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|solutionrelative:frequencydictionary_forms\\binarynode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\frequencydictionary_forms\\huffmanalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\frequencydictionary_forms\\huffmanalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|solutionrelative:frequencydictionary_forms\\huffmanalgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\frequencydictionary_forms\\binarynode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|solutionrelative:frequencydictionary_forms\\binarynode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F4DFC9F8-9F1A-40CC-83A7-AC0C4582ACA3}|FrequencyDictionary_Forms\\FrequencyDictionary_Forms.csproj|solutionrelative:frequencydictionary_forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -34,35 +34,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "HuffmanAlgorithm.cs",
-              "DocumentMoniker": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
               "RelativeDocumentMoniker": "FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
-              "ToolTip": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
+              "ToolTip": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
               "RelativeToolTip": "FrequencyDictionary_Forms\\HuffmanAlgorithm.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAJwAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T09:57:45.642Z"
+              "WhenOpened": "2024-04-14T09:57:45.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BinaryNode.cs",
-              "DocumentMoniker": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\BinaryNode.cs",
+              "DocumentMoniker": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\BinaryNode.cs",
               "RelativeDocumentMoniker": "FrequencyDictionary_Forms\\BinaryNode.cs",
-              "ToolTip": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\BinaryNode.cs",
+              "ToolTip": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\BinaryNode.cs",
               "RelativeToolTip": "FrequencyDictionary_Forms\\BinaryNode.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T08:42:16.565Z"
+              "WhenOpened": "2024-04-14T08:42:16.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
               "RelativeDocumentMoniker": "FrequencyDictionary_Forms\\Form1.cs",
-              "ToolTip": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
+              "ToolTip": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
               "RelativeToolTip": "FrequencyDictionary_Forms\\Form1.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -73,10 +75,10 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\shtoretc\\Downloads\\Telegram Desktop\\FrequencyDictionary_Forms (2)\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\shtoretc\\SimpleHuffmanEncoder\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs",
               "RelativeDocumentMoniker": "FrequencyDictionary_Forms\\Form1.cs",
               "ToolTip": "C:\\Users\\shtoretc\\source\\repos\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\..\\..\\source\\repos\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "..\\..\\source\\repos\\FrequencyDictionary_Forms\\FrequencyDictionary_Forms\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T08:41:48.674Z"
             }
