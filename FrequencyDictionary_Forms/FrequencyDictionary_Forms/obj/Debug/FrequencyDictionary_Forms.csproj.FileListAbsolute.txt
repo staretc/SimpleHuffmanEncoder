@@ -1,0 +1,20 @@
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.AssemblyReference.cache
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.Properties.Resources.resources
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.GenerateResource.cache
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.CoreCompileInputs.cache
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.exe.config
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.exe
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.pdb
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.Form1.resources
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.exe
+C:\Users\shtoretc\source\repos\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.pdb
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.exe.config
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.exe
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\bin\Debug\FrequencyDictionary_Forms.pdb
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.AssemblyReference.cache
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.Form1.resources
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.Properties.Resources.resources
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.GenerateResource.cache
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.csproj.CoreCompileInputs.cache
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.exe
+C:\Users\shtoretc\Downloads\Telegram Desktop\FrequencyDictionary_Forms (2)\FrequencyDictionary_Forms\FrequencyDictionary_Forms\obj\Debug\FrequencyDictionary_Forms.pdb
