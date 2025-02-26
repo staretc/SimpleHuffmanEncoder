@@ -14,13 +14,11 @@ namespace FrequencyDictionary_Forms
 {
     public partial class Form1 : Form
     {
-        Dictionary<char, string> HuffmanEncodingDictionary;
-        Dictionary<string, char> HuffmanDecodingDictionary;
+        HuffmanAlgorithm huffmanAlgorithm;
         public Form1()
         {
             InitializeComponent();
-            HuffmanEncodingDictionary = new Dictionary<char, string>();
-            HuffmanDecodingDictionary = new Dictionary<string, char>();
+            huffmanAlgorithm = new HuffmanAlgorithm();
         }
 
         private void buttonInput_Click(object sender, EventArgs e)
@@ -28,13 +26,13 @@ namespace FrequencyDictionary_Forms
             OpenFileDialog ofd = new OpenFileDialog();
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                HuffmanEncodingDictionary = HuffmanAlgorithm.CreateHuffmanEncodingDictionary(ofd.FileName);
-                HuffmanDecodingDictionary = HuffmanEncodingDictionary.ToDictionary(x => x.Value, x => x.Key);
+                huffmanAlgorithm.CreateHuffmanEncodingDictionary(ofd.FileName);
             }
             listBoxCodes.Items.Clear();
-            foreach(var code in HuffmanEncodingDictionary)
+            listBoxCompession.Items.Clear();
+            foreach(var code in huffmanAlgorithm.EncodingDictionary)
             {
-                listBoxCodes.Items.Add($"{code.Key} - {code.Value}");
+                listBoxCodes.Items.Add($"[{code.Key}] - {code.Value}");
             }
         }
 
@@ -46,12 +44,13 @@ namespace FrequencyDictionary_Forms
             {
                 if (ofdTake.ShowDialog() == DialogResult.OK)
                 {
-                    string encodedText = HuffmanAlgorithm.EncodeString(ofdTake.FileName, HuffmanEncodingDictionary);
+                    string encodedText = huffmanAlgorithm.EncodeString(ofdTake.FileName);
 
                     OpenFileDialog ofdPlace = new OpenFileDialog();
                     if (ofdPlace.ShowDialog() == DialogResult.OK)
                     {
                         File.WriteAllText(ofdPlace.FileName, encodedText);
+                        listBoxCompession.Items.Add("Коэффициент сжатия: " + huffmanAlgorithm.CompressionRatio);
                         MessageBox.Show("Converted successfully!");
                     }
                 }
@@ -70,7 +69,7 @@ namespace FrequencyDictionary_Forms
             {
                 if (ofdTake.ShowDialog() == DialogResult.OK)
                 {
-                    string decodedText = HuffmanAlgorithm.DecodeString(ofdTake.FileName, HuffmanDecodingDictionary);
+                    string decodedText = huffmanAlgorithm.DecodeString(ofdTake.FileName);
 
                     OpenFileDialog ofdPlace = new OpenFileDialog();
                     if (ofdPlace.ShowDialog() == DialogResult.OK)

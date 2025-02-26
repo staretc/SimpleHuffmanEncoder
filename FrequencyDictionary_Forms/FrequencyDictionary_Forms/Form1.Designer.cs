@@ -32,6 +32,7 @@
             this.listBoxCodes = new System.Windows.Forms.ListBox();
             this.buttonEncodeText = new System.Windows.Forms.Button();
             this.buttonDecode = new System.Windows.Forms.Button();
+            this.listBoxCompession = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonInput
@@ -77,11 +78,22 @@
             this.buttonDecode.UseVisualStyleBackColor = true;
             this.buttonDecode.Click += new System.EventHandler(this.buttonDecode_Click);
             // 
+            // listBoxCompession
+            // 
+            this.listBoxCompession.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBoxCompession.FormattingEnabled = true;
+            this.listBoxCompession.ItemHeight = 25;
+            this.listBoxCompession.Location = new System.Drawing.Point(479, 568);
+            this.listBoxCompession.Name = "listBoxCompession";
+            this.listBoxCompession.Size = new System.Drawing.Size(404, 54);
+            this.listBoxCompession.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(895, 658);
+            this.Controls.Add(this.listBoxCompession);
             this.Controls.Add(this.buttonDecode);
             this.Controls.Add(this.buttonEncodeText);
             this.Controls.Add(this.listBoxCodes);
@@ -98,6 +110,7 @@
         private System.Windows.Forms.ListBox listBoxCodes;
         private System.Windows.Forms.Button buttonEncodeText;
         private System.Windows.Forms.Button buttonDecode;
+        private System.Windows.Forms.ListBox listBoxCompession;
     }
 }
 

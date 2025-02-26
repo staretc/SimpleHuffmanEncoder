@@ -10,22 +10,45 @@ namespace FrequencyDictionary_Forms
     /// <summary>
     /// Class of methods to make Huffman Encoding from input text, encode and decode text.
     /// </summary>
-    public static class HuffmanAlgorithm
+    public class HuffmanAlgorithm
     {
+        #region Properties
+        /// <summary>
+        /// Encoding Dictionary for input string
+        /// </summary>
+        public Dictionary<char, string> EncodingDictionary;
+        /// <summary>
+        /// Decoding Dictionary for encoded string
+        /// </summary>
+        public Dictionary<string, char> DecodingDictionary;
+        /// <summary>
+        /// Compression Ratio for encoded text
+        /// </summary>
+        public float CompressionRatio;
+        #endregion
+
+        #region Constructors
+        public HuffmanAlgorithm()
+        {
+            EncodingDictionary = new Dictionary<char, string>();
+            DecodingDictionary = new Dictionary<string, char>();
+            CompressionRatio = 0;
+        }
+        #endregion
+
         #region Huffman Dictionary
         /// <summary>
         /// Creating a Huffman Encoding Dictionary from input text.
         /// </summary>
         /// <param name="inputText"></param>
         /// <returns></returns>
-        public static Dictionary<char, string> CreateHuffmanEncodingDictionary(string fileName)
+        public void CreateHuffmanEncodingDictionary(string fileName)
         {
             string inputText = File.ReadAllText(fileName).ToLower();
             List<Tuple<int, char>> priorityChars = MakePriorities(inputText);
             Node root = CreateBinaryTree(priorityChars);
-            Dictionary<char, string> HuffmanCodes = new Dictionary<char, string>();
-            EncodeChars(root, ref HuffmanCodes, "");
-            return HuffmanCodes;
+            EncodeChars(root, "");
+            DecodingDictionary = EncodingDictionary.ToDictionary(x => x.Value, x => x.Key);
         }
         /// <summary>
         /// Making Huffman codes from binary tree
@@ -33,24 +56,24 @@ namespace FrequencyDictionary_Forms
         /// <param name="root"></param>
         /// <param name="HuffmanCodes"></param>
         /// <param name="code"></param>
-        private static void EncodeChars(Node root, ref Dictionary<char, string> HuffmanCodes, string code)
+        private void EncodeChars(Node root, string code)
         {
             if (root == null)
                 return;
             if (root.NextLeft == null && root.NextRight == null)
             {
-                HuffmanCodes[root.Value] = code;
+                EncodingDictionary[root.Value] = code;
             }
 
-            EncodeChars(root.NextLeft, ref HuffmanCodes, code + "0");
-            EncodeChars(root.NextRight, ref HuffmanCodes, code + "1");
+            EncodeChars(root.NextLeft, code + "0");
+            EncodeChars(root.NextRight, code + "1");
         }
         /// <summary>
         /// Making binary tree of frequencies of chars
         /// </summary>
         /// <param name="priorityChars"></param>
         /// <returns></returns>
-        private static Node CreateBinaryTree(List<Tuple<int, char>> priorityChars)
+        private Node CreateBinaryTree(List<Tuple<int, char>> priorityChars)
         {
             List<Tuple<int, Node>> nodesQueue = new List<Tuple<int, Node>>();
             foreach (var prCh in priorityChars)
@@ -75,7 +98,7 @@ namespace FrequencyDictionary_Forms
         /// </summary>
         /// <param name="inputText"></param>
         /// <returns></returns>
-        private static List<Tuple<int, char>> MakePriorities(string inputText)
+        private List<Tuple<int, char>> MakePriorities(string inputText)
         {
             Dictionary<char, int> counter = FrequencyCounter(inputText);
             List<Tuple<int, char>> priorityChars = new List<Tuple<int, char>>();
@@ -91,7 +114,7 @@ namespace FrequencyDictionary_Forms
         /// </summary>
         /// <param name="inputText"></param>
         /// <returns></returns>
-        private static Dictionary<char, int> FrequencyCounter(string inputText)
+        private Dictionary<char, int> FrequencyCounter(string inputText)
         {
             Dictionary<char, int> counter = new Dictionary<char, int>();
             for (int i = 0; i < inputText.Length; i++)
@@ -110,24 +133,29 @@ namespace FrequencyDictionary_Forms
         #endregion
 
         #region Encoding-Decoding Methods
-        public static string EncodeString(string filePath, Dictionary<char, string> HuffmanDictionary)
+        public string EncodeString(string filePath)
         {
             string inputText = File.ReadAllText(filePath).ToLower();
             StringBuilder sb = new StringBuilder();
+            var inputTextBitsCount = inputText.Length * 16;
+            int outputTextBitsCount = 0;
+
             foreach (var chr in inputText)
             {
-                if (HuffmanDictionary.ContainsKey(chr))
+                if (EncodingDictionary.ContainsKey(chr))
                 {
-                    sb.Append(HuffmanDictionary[chr]);
+                    sb.Append(EncodingDictionary[chr]);
+                    outputTextBitsCount += EncodingDictionary[chr].Length;
                 }
                 else
                 {
                     throw new ArgumentNullException("Dictionary and input text are not compatible!");
                 }
             }
+            CompressionRatio = (float) inputTextBitsCount / outputTextBitsCount;
             return sb.ToString();
         }
-        public static string DecodeString(string filePath, Dictionary<string, char> HuffmanDictionary)
+        public string DecodeString(string filePath)
         {
             string inputText = File.ReadAllText(filePath);
             StringBuilder sb = new StringBuilder();
@@ -137,9 +165,9 @@ namespace FrequencyDictionary_Forms
                 if(chr == '1' || chr == '0')
                 {
                     temp += chr;
-                    if (HuffmanDictionary.ContainsKey(temp))
+                    if (DecodingDictionary.ContainsKey(temp))
                     {
-                        sb.Append(HuffmanDictionary[temp]);
+                        sb.Append(DecodingDictionary[temp]);
                         temp = "";
                     }
                 }
